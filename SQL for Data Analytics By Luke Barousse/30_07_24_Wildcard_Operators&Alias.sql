@@ -19,3 +19,12 @@
 -- SELECT job_id, job_title_short, job_location, job_via, salary_year_avg
 -- FROM job_postings_fact
 -- WHERE job_title LIKE '%Business_Analyst%'
+
+-- Alias: AS 
+SELECT job_title_short AS job_title, 
+	job_location AS location, 
+    job_via AS online_platform, 
+    salary_year_avg AS salary 
+FROM job_postings_fact AS jpc
+
+
